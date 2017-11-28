@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>About - Schr&oumldinger's Classroom</title>
+    <title>Contact - Schr&oumldinger's Classroom</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,16 +35,12 @@
         .navbar .btn-group .dropdown-menu a:active {
             color: #fff !important;
         }
-        section{
-            padding:0;
-            margin:0;
-        }
+
     </style>
 
 </head>
 
 <body>
-
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:rgba(21,21,21,0.05)">
         <div class="container">
@@ -57,8 +53,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="home.html">Home</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item btn-group">
                         <a class="nav-link nav-item dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lessons</a>
@@ -84,8 +80,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="faq.html">FAQ</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
                 <form class="form-inline">
@@ -99,43 +95,70 @@
     <!-- Intro Section -->
     <div class="pt-5 pr-5 pb-5 pl-5" style="overflow:hidden; color:rgb(73, 155, 223); background-color: #161616">
         <div class="divider-new">
-            <h2 class="h2-responsive wow fadeIn">About us</h2>
+            <h2 class="h2-responsive wow fadeIn">Contact us</h2>
         </div>
     </div>
 
-    <!-- Main Container Image -->
-    <div style="overflow:hidden; background-image: linear-gradient(#161616,#102c60);">
-        <center>
-            <img style="padding: 0 3em 10 3em; width:auto; height:auto; display:block" src="schrodingerandfriends.jpg">
-        </center>
+    <!-- Forms container -->
+    <div class="pr-5 pb-5 pl-5" style="overflow:hidden; color:rgb(73, 155, 223);background-image: linear-gradient(#161616,#102c60)">
+        <div style="margin-left:25%; margin-right:25%">
+            <p><strong>Full Name:</strong></p>
+            <form class="mb-3" style="background-color:#eaeaea; width:100%">
+                <input type="text" name="name" id="name"><br>
+            </form>
+            <p><strong>Email:</strong></p>
+            <form class="mb-3" style="background-color:#eaeaea; width:100%">
+                <input type="text" name="email" id="email"><br>
+            </form>
+            <p><strong>Comments:</strong></p>
+            <textarea class="mb-3" style="background-color:#eaeaea; width:100%; height:100%" name="Comments" id="Comments" rows="10"></textarea>
+            <form>
+                <input type="submit" name="submit" id="submit">
+            </form>
+        </div>
     </div>
+    <!--/ Forms container -->
 
-    <!-- Main container -->
-    <div style="overflow:hidden; color:rgb(73, 155, 223);background-image: linear-gradient(#102c60,#161616)">
-        <p class="pt-3" style="margin-left:25%; margin-right:25%">The first ever online, interactive, educational quantum physics experience.
-            Inspired by the brilliant minds you see in the photo above, Schr&oumldinger's Classroom aims to immerse you in the world of physics like never before.
-            You will explore the many diverse theories and experiments of quantum mechanics through our endless selection of lessons that include readings, diagrams, flash games and much more!
-            Once you are comfortable with the content, there are many challenging problems for you to solve and test your knowledge.</p>
-        <p class="pt-3" style="margin-left:25%; margin-right:25%">Sch&oumldinger's Classroom was originally created in November 2017 as a website design project by Cameron Naraine and Darren Strickland. Its goal is to educate users in the physics subfield of quantum mechanics and share the overall joy and passion of physics with the general public.</p>
-        <p class="pt-3 pb-3" style="margin-left:25%; margin-right:25%">Please enjoy Sch&oumldinger's Classroom and spread the word about it to anyone interested in physics! If you have any questions or concerns about the website, please <a href="contact.html">contact</a> us. We would love to hear your feedback!</p>
-    </div>
+    <!-- Main container-->
+    <div class="pt-5 pr-5 pb-5 pl-5" style="overflow:hidden; color:rgb(73, 155, 223);background-image: linear-gradient(#102c60,#161616)">
 
-    <!--Footer-->
-    <footer class="full-bg-img center-on-small-only" style="color:rgb(73, 155, 223);background-color:#161616">
+        <!--Section: Contact-->
+        <section id="contact pb-5">
+            <div class="row">
+                <!--First column-->
+                <div class="col-md-8 mb-5">
+                    <div id="map-container" class="z-depth-1 wow fadeIn" style="height:325px"></div>
+                </div>
+                <!--/First column-->
 
-        <!--Footer Links-->
-        <div class="container-fluid">
+                <!--Second column-->
+                <div class="col-md-4">
+                    <ul class="text-center list-unstyled">
+                        <li class="wow fadeIn" data-wow-delay="0.2s"><i class="fa fa-map-marker teal-text fa-lg"></i>
+                            <p style="padding: 5px 0 5px 0">75 University Ave. W</p>
+                            <p style="padding: 5px 0 5px 0">Waterloo, ON. Canada N2L 3C5</p>
+                        </li>
 
-            <div class="text-center">
-                <h3>"Quantum physics thus reveals<br>
-                    a basic oneness of the universe."</h3>
-                <h5>-Erwin Schr&oumldinger</h5>
+                        <li class="wow fadeIn mt-5 pt-2" data-wow-delay="0.3s"><i class="fa fa-phone teal-text fa-lg"></i>
+                            <p><a href="sms:1-289-880-2418">1-289-880-2418</a></p>
+                        </li>
+
+                        <li class="wow fadeIn mt-5 pt-2" data-wow-delay="0.4s"><i class="fa fa-envelope teal-text fa-lg"></i>
+                            <p><a href="mailto:nara2500@mylaurier.ca">nara2500@mylaurier.ca</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <!--/Second column-->
             </div>
-        </div>
+        </section>
+        <!--Section: Contact-->
 
-        <!--/.Footer Links-->
+    </div>
+    <!--/ Main container-->
 
-        <hr>
+
+   <!--Footer-->
+    <footer class="full-bg-img center-on-small-only" style="color:rgb(73, 155, 223);background-color:#161616">
 
         <!--Copyright-->
         <div class="footer-copyright">
@@ -147,7 +170,6 @@
 
     </footer>
     <!--/.Footer-->
-
 
     <!-- SCRIPTS -->
 
@@ -169,7 +191,7 @@
     <script>
         function init_map() {
 
-            var var_location = new google.maps.LatLng(40.725118, -73.997699);
+            var var_location = new google.maps.LatLng(43.4723532,-80.5263399);
 
             var var_mapoptions = {
                 center: var_location,
@@ -180,7 +202,7 @@
             var var_marker = new google.maps.Marker({
                 position: var_location,
                 map: var_map,
-                title: "New York"
+                title: "Waterloo"
             });
 
             var var_map = new google.maps.Map(document.getElementById("map-container"),
