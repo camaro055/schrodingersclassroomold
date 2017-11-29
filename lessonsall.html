@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>About - Schr&oumldinger's Classroom</title>
+    <title>Lessons - Schr&oumldinger's Classroom</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,16 +35,32 @@
         .navbar .btn-group .dropdown-menu a:active {
             color: #fff !important;
         }
-        section{
-            padding:0;
-            margin:0;
+
+        .oval {
+            padding: 2em 2em 2em 2em;
+            /* height: 125%;
+            width: 75%; */
+            height: 10em;
+            width: 80%;
+            background-color: rgba(14, 177, 123, 0.7);
+            border-radius: 50%;
         }
+
+        .ovaltext {
+            margin-top: 10%;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        
+        a {
+            color:rgb(153, 214, 255);
+        }
+
     </style>
 
 </head>
 
 <body>
-
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:rgba(21,21,21,0.05)">
         <div class="container">
@@ -57,13 +73,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="home.html">Home</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item btn-group">
                         <a class="nav-link nav-item dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lessons</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="lessonsall.html">All Lessons</a>
+                            <a class="dropdown-item active" href="lessonsall.html">All Lessons <span class="sr-only">(current)</span></a>
                             <a class="dropdown-item" href="lesson1.html">1. Introduction to Quantum Mechanics</a>
                             <a class="dropdown-item" href="lesson2.html">2. 1-D Schr&oumldinger Equation</a>
                             <a class="dropdown-item" href="lesson3.html">3. Particle in a box problem</a>
@@ -103,36 +119,71 @@
     <!--/.Navbar-->
 
     <!-- Intro Section -->
-    <div class="pt-5 pr-5 pb-5 pl-5" style="overflow:hidden; color:rgb(73, 155, 223); background-color: #161616">
+    <div class="pt-5 pr-5 pb-5 pl-5" style="overflow:hidden; color:rgb(73, 155, 223); background-image: linear-gradient(#161616,#102c60)">
         <div class="divider-new">
-            <h2 class="h2-responsive wow fadeIn">About us</h2>
+            <h2 class="h2-responsive wow fadeIn">Lessons</h2>
         </div>
-    </div>
-
-    <!-- Main Container Image -->
-    <div style="overflow:hidden; background-image: linear-gradient(#161616,#102c60);">
-        <center>
-            <img style="padding: 0 3em 10 3em; width:auto; height:auto; display:block" src="schrodingerandfriends.jpg">
-        </center>
     </div>
 
     <!-- Main container -->
     <div style="overflow:hidden; color:rgb(73, 155, 223);background-image: linear-gradient(#102c60,#161616)">
-        <p class="pt-3" style="margin-left:25%; margin-right:25%">The first ever online, interactive, educational quantum physics experience.
-            Inspired by the brilliant minds you see in the photo above, Schr&oumldinger's Classroom aims to immerse you in the world of physics like never before.
-            You will explore the many diverse theories and experiments of quantum mechanics through our endless selection of lessons that include readings, diagrams, flash games and much more!
-            Once you are comfortable with the content, there are many challenging problems for you to solve and test your knowledge.</p>
-        <p class="pt-3" style="margin-left:25%; margin-right:25%">Sch&oumldinger's Classroom was originally created in November 2017 as a website design project by Cameron Naraine and Darren Strickland. Its goal is to educate users in the physics subfield of quantum mechanics and share the overall joy and passion of physics with the general public.</p>
-        <p class="pt-3 pb-3" style="margin-left:25%; margin-right:25%">Please enjoy Sch&oumldinger's Classroom and spread the word about it to anyone interested in physics! If you have any questions or concerns about the website, please <a href="contact.html">contact</a> us. We would love to hear your feedback!</p>
+        <center>
+            <div class="row mt-5 mr-5 ml-5" style="margin-bottom:5em">
+                <!--First column-->
+                <div class="col-md-4">
+                    <div class="oval">
+                        <p class="ovaltext"><a href="lesson1.html">Introduction to<br>Quantum Mechanics</a></p>
+                    </div>
+                </div>
+                <!--/First column-->
+                <!--Second column-->
+                <div class="col-md-4">
+                    <div class="oval">
+                        <p class="ovaltext"><a href="lesson2.html">1-D Schr&oumldinger Equation</a></p>
+                    </div>
+                </div>
+                <!--/Second column-->
+                <!--Third column-->
+                <div class="col-md-4">
+                    <div class="oval">
+                        <p class="ovaltext"><a href="lesson3.html">Particle in a box<br>problem</a></p>
+                    </div>
+                </div>
+                <!--/Third column-->
+            </div>
+            <div class="row mt-5 mr-5 ml-5" style="margin-bottom:5em">
+                <!--First column-->
+                <div class="col-md-4">
+                    <div class="oval">
+                        <p class="ovaltext"><a href="lesson4.html">Quantum<br>Tunnelling</a></p>
+                    </div>
+                </div>
+                <!--/First column-->
+                <!--Second column-->
+                <div class="col-md-4">
+                    <div class="oval">
+                        <p class="ovaltext"><a href="lesson5.html">Blackbody<br>Radiation</a></p>
+                    </div>
+                </div>
+                <!--/Second column-->
+                <!--Third column-->
+                <div class="col-md-4">
+                    <div class="oval">
+                        <p class="ovaltext"><a href="lesson6.html">Young's Double-Slit Experiment</a></p>
+                    </div>
+                </div>
+                <!--/Third column-->
+            </div>
+        </center>
     </div>
 
     <!--Footer-->
     <footer class="pt-5 full-bg-img center-on-small-only" style="color:rgb(73, 155, 223);background-color:#161616">
         <div class="container-fluid">
             <div class="text-center">
-                <h3>"Quantum physics thus reveals<br>
-                    a basic oneness of the universe."</h3>
-                <h5>-Erwin Schr&oumldinger</h5>
+                <h3>"Look deep into nature, and then<br>
+                    you will understand everything better."</h3>
+                <h5>-Albert Einstein</h5>
             </div>
         </div>
 
@@ -148,7 +199,6 @@
 
     </footer>
     <!--/.Footer-->
-
 
     <!-- SCRIPTS -->
 
@@ -170,7 +220,7 @@
     <script>
         function init_map() {
 
-            var var_location = new google.maps.LatLng(40.725118, -73.997699);
+            var var_location = new google.maps.LatLng(43.4723532,-80.5263399);
 
             var var_mapoptions = {
                 center: var_location,
@@ -181,7 +231,7 @@
             var var_marker = new google.maps.Marker({
                 position: var_location,
                 map: var_map,
-                title: "New York"
+                title: "Waterloo"
             });
 
             var var_map = new google.maps.Map(document.getElementById("map-container"),
