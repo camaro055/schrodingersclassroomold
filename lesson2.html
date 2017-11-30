@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Lesson 2 - Schr&oumldinger's Classroom</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Template styles -->
+    <style>
+        /* TEMPLATE STYLES */
+        .flex-center {
+            color: #fff;
+        }
+        .intro-1 {
+            background: url("https://mdbootstrap.com/img/Photos/Horizontal/Work/full page/img%20(2).jpg")no-repeat center center;
+            background-size: cover;
+        }
+        .navbar .btn-group .dropdown-menu a:hover {
+            color: #000 !important;
+        }
+
+        .navbar .btn-group .dropdown-menu a:active {
+            color: #fff !important;
+        }
+
+        h5 {
+            padding-top: 1em;
+            color:rgb(40, 147, 218);
+            /* color:rgb(68, 180, 255); */
+        }
+
+        p {
+            padding-bottom: 1em;
+            color:rgb(153, 214, 255);
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:rgba(21,21,21,0.05)">
+        <div class="container">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item btn-group">
+                        <a class="nav-link nav-item dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lessons</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="lessonsall.html">All Lessons</a>
+                            <a class="dropdown-item" href="lesson1.html">1. Introduction to Quantum Mechanics</a>
+                            <a class="dropdown-item" href="lesson2.html">2. 1-D Schr&oumldinger Equation</a>
+                            <a class="dropdown-item" href="lesson3.html">3. Particle in a box problem</a>
+                            <a class="dropdown-item" href="lesson4.html">4. Quantum Tunnelling</a>
+                            <a class="dropdown-item" href="lesson5.html">5. Blackbody Radiation</a>
+                            <a class="dropdown-item" href="lesson6.html">6. Young's Double-Slit Experiment</a>
+                        </div>
+                    </li>
+                    <li class="nav-item btn-group">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Examples</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="examplesall.html">All Examples</a>
+                            <a class="dropdown-item" href="example1.html">1. Introduction to Quantum Mechanics</a>
+                            <a class="dropdown-item" href="example2.html">2. 1-D Schr&oumldinger Equation</a>
+                            <a class="dropdown-item" href="example3.html">3. Particle in a box problem</a>
+                            <a class="dropdown-item" href="example4.html">4. Quantum Tunnelling</a>
+                            <a class="dropdown-item" href="example5.html">5. Blackbody Radiation</a>
+                            <a class="dropdown-item" href="example6.html">6. Young's Double-Slit Experiment</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="forum.html">Forum</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="faq.html">FAQ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--/.Navbar-->
+
+    <!-- Intro Section -->
+    <div class="pt-5 pr-5 pb-5 pl-5" style="overflow:hidden; color:rgb(73, 155, 223); background-image: linear-gradient(#161616,#102c60)">
+        <div class="divider-new">
+            <h2 class="h2-responsive wow fadeIn">1-D Schr&oumldinger Equation</h2>
+        </div>
+    </div>
+
+    <!-- Main container -->
+    <div class="pr-5 pb-5 pl-5" style="overflow:hidden; background-image: linear-gradient(#102c60,#161616)">
+        <div style="margin-left:10%; margin-right:10%">
+            <h5>The Wave Function</h5><br>
+            <p>
+            Wave functions contain all the information that can be known about a system and are used to represent the state of a physical system. 
+            Thus a wave function, generally speaking, has real parts and imaginary parts
+            In coordinate space a particle is repersented by the wave funtion of the position of the particle at a given time: 
+            </p>   
+            <center><p style="color:#0DF1DE ;">
+            In 1-Dimension &psi;=(x,t)
+            <br>
+            2-Dimensions &psi;=(x,y,t)
+            <br>
+            3-Dimentions &psi;=(x,y,z,t)
+            </p></center>
+            <p>
+            Even particles within N dimensions (where N can equal 1,2,3...,&infin;) can be repersented with the use of a wave equation:    
+            </p>
+            <center><p style="color:#0DF1DE ;">
+            &psi;=(x<sub>1</sub>,x<sub>2</sub>,...,x<sub>N</sub>,y<sub>1</sub>,y<sub>2</sub>,...,y<sub>N</sub>,z<sub>1</sub>,z<sub>2</sub>,...,z<sub>N</sub>,t)      
+            </p></center>
+            <h5>Normalization of the Wave Function</h5><br>
+            <p>
+            As discussed in the Introduciton to Quantum Mechanics lesson, particles are measured by probability. Probability is repersented by a real number between 0 and 1. 
+            How ever a measurement of probability 0 is an impossible outcome, since the particle must be somewhere, and a probability of 1 is a certian outcome, meaning that there is a 100% chance the particle is there.
+            Looking at the simplest Probability function, using a 1-D wave function, normalization of a wave function means finding the form of the wave function that makes the statement: 
+            </p>
+            <center><p style="color:#0DF1DE ;">
+            <MATH style="font-size: 150%;">P(x,t)=&int; |&psi;(x,t)|<sup>2</sup> dx = 1 <br>
+            <br>
+            |&psi;(x,t)|<sup>2</sup> can also be written as <br>&psi;(x,t)<sup>*</sup>&psi;(x,t) or &rho;(x,t)
+            </MATH>      
+            </p></center>
+            <p>True.</p>
+            <p>
+            Essential this means normalizing is finding the exact for of &psi; that provides a probability that the particle is found somewhere in the space is 1.
+            This sometimes means solving for some constant related to the above constraint. 
+            </p>
+            <p>
+            An example of normalization can be seen below:
+            <center>
+                <img class="full-bg-img" style="padding: 0em 3em 3em 3em; width: auto;" src="NormalizedEx.png" alt="Normalization Example">
+            </center>
+            </p>
+            <p>
+            With the knowledge of wave functions and normalization we can now introduce The Born interpretation of probabilities. This interpertation uses the probability function from above and a given region a &lt; x &lt; b to calculate the probability of finding the particle within that region.
+            </p>
+            <p>
+                <center>
+                    <img class="full-bg-img" style="padding: 0em 3em 3em 3em; width: auto;" src="PobabilityGraph.jpg" alt="Probability Interpretation">
+                </center>
+            </p>
+            <h5>Time-Independent Schr&oumldinger Equation</h5><br>
+            <p>
+            Now with the understanding of probability and normalization of wave functions we can introduce Schr&oumldinger's Time-independent equation:
+            </p>
+            <p>
+                <center>
+                    <img class="full-bg-img" style="padding: 0em 3em 3em 3em; width: auto;" src="schrodingerequation.jpg" alt="Time-Independent Schrodinger Equation">
+                </center>
+            </p>
+            <p>
+            The Schr&oumldinger equation also sometime known as Schr&oumldingers wave equation is a partial differential equation. The equation essential is:
+            </p>
+            <center><p style="color:#0DF1DE ;">Kinetic Energy + Potential Energy = Total Energy <a href="https://en.wikipedia.org/wiki/Energy_conservation">(Energy Conservation)</a></p></center>  
+            <p>
+            It uses energy conservation inorder to find out information about an electrons behaviour and its bond to a nucleus. 
+            The way Schr&oumldingers equation is able to do this is by allowing us to calculate the electron's wave function.
+            By calculating the electron's wave equation we are now able to obtain the electron's energy levels, quantum numbers, and the shapes and orientations of orbitals which all characterize the electrons in an atom.
+            In the equation above the variables given represent:
+            </p>
+            <center><p style="color:#0DF1DE ;">
+                    <MATH>
+                    &hbar; = h/2&pi;</MATH> where h=6.626x10<sup>-34</sup> (J s)<a href="https://en.wikipedia.org/wiki/Planck_constant">(Planck's Constant)</a><br>
+                    m = electron mass (9.109x10<sup>-31</sup>kg)<br>
+                    <MATH>&nabla;<sup>2</sup>=</MATH>Laplacian Operator <a href="https://en.wikipedia.org/wiki/Laplace_operator">(Laplacian Operator)</a><br>
+                    &psi; = the wave function<br>
+                    V = the potential energy<br>
+                    E = the energy eigenvalue <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/Scheq.html#c5">(Energy eigenvalue)</a>
+                    <br>
+                    r = x (the position variable)       
+                    </p></center>
+            <p>
+            With the Time-Independet Schr&oumldinger Equation and the rest of the knowledge on wave functions from above we are now ready to tackle the Particle in a Box problem introduced in Lesson 2.
+            </p>
+        </div>
+    </div>
+    <!--/ Main container -->
+
+    <!--Footer-->
+    <footer class="full-bg-img center-on-small-only" style="color:rgb(73, 155, 223);background-color:#161616">
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid" style="color:#fff">
+                © 2017 Copyright: <a href="#"> CP202 Group64</a>
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap dropdown -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!--Google Maps-->
+    <script src="https://maps.google.com/maps/api/js"></script>
+
+    <script>
+        function init_map() {
+
+            var var_location = new google.maps.LatLng(43.4723532,-80.5263399);
+
+            var var_mapoptions = {
+                center: var_location,
+
+                zoom: 14
+            };
+
+            var var_marker = new google.maps.Marker({
+                position: var_location,
+                map: var_map,
+                title: "Waterloo"
+            });
+
+            var var_map = new google.maps.Map(document.getElementById("map-container"),
+                var_mapoptions);
+
+            var_marker.setMap(var_map);
+
+        }
+
+        google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+
+    <!-- Animations init-->
+    <script>
+        new WOW().init();
+    </script>
+
+
+</body>
+
+</html>
