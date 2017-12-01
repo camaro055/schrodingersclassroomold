@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Schr&oumldinger's Classroom</title>
+    <title>Schr&ouml;dinger's Classroom</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,16 +24,19 @@
         .flex-center {
             color: #fff;
         }
-        .intro-1 {
-            background: url("https://mdbootstrap.com/img/Photos/Horizontal/Work/full page/img%20(2).jpg")no-repeat center center;
-            background-size: cover;
-        }
         .navbar .btn-group .dropdown-menu a:hover {
             color: #000 !important;
         }
 
         .navbar .btn-group .dropdown-menu a:active {
             color: #fff !important;
+        }
+        .imgcenter{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+            padding: 3em;
         }
 
     </style>
@@ -47,7 +50,6 @@
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:rgba(21,21,21,0.05)">
             <div class="container">
-                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -60,31 +62,27 @@
                             <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item btn-group">
-                            <a class="nav-link nav-item dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lessons</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="lessonsall.html">All Lessons</a>
-                                <a class="dropdown-item" href="lesson1.html">1. Introduction to Quantum Mechanics</a>
-                                <a class="dropdown-item" href="lesson2.html">2. 1-D Schr&oumldinger Equation</a>
-                                <a class="dropdown-item" href="lesson3.html">3. Particle in a box problem</a>
-                                <a class="dropdown-item" href="lesson4.html">4. Quantum Tunnelling</a>
-                                <a class="dropdown-item" href="lesson5.html">5. Blackbody Radiation</a>
-                                <a class="dropdown-item" href="lesson6.html">6. Young's Double-Slit Experiment</a>
+                            <a class="nav-link nav-item dropdown-toggle" id="navbarDropdownMenuLinkLessons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lessons</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkLessons">
+                                <a class="dropdown-item" href="lessons.html">All Lessons</a>
+                                <a class="dropdown-item" href="lesson1.html">Introduction to Quantum Mechanics</a>
+                                <a class="dropdown-item" href="lesson2.html">1-D Schr&ouml;dinger Equation</a>
+                                <a class="dropdown-item" href="lesson3.html">Particle in a box problem</a>
+                                <a class="dropdown-item" href="lesson4.html">Quantum Tunnelling</a>
+                                <a class="dropdown-item" href="lesson5.html">Blackbody Radiation</a>
+                                <a class="dropdown-item" href="lesson6.html">Young's Double-Slit Experiment</a>
                             </div>
                         </li>
                         <li class="nav-item btn-group">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Examples</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="examplesall.html">All Examples</a>
-                                <a class="dropdown-item" href="example1.html">1. Introduction to Quantum Mechanics</a>
-                                <a class="dropdown-item" href="example2.html">2. 1-D Schr&oumldinger Equation</a>
-                                <a class="dropdown-item" href="example3.html">3. Particle in a box problem</a>
-                                <a class="dropdown-item" href="example4.html">4. Quantum Tunnelling</a>
-                                <a class="dropdown-item" href="example5.html">5. Blackbody Radiation</a>
-                                <a class="dropdown-item" href="example6.html">6. Young's Double-Slit Experiment</a>
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLinkExamples" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Examples</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkExamples">
+                                <a class="dropdown-item" href="examples.html">All Examples</a>
+                                <a class="dropdown-item" href="example2.html">1-D Schr&ouml;dinger Equation</a>
+                                <a class="dropdown-item" href="example3.html">Particle in a box problem</a>
+                                <a class="dropdown-item" href="example4.html">Quantum Tunnelling</a>
+                                <a class="dropdown-item" href="example5.html">Blackbody Radiation</a>
+                                <a class="dropdown-item" href="example6.html">Young's Double-Slit Experiment</a>
                             </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="forum.html">Forum</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="faq.html">FAQ</a>
@@ -93,9 +91,9 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
-                    <form class="form-inline">
+                    <!-- <form class="form-inline">
                         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </nav>
@@ -107,7 +105,7 @@
                 <div class="container" style="color:rgb(73, 155, 223)">
                     <ul>
                         <li>
-                            <h1 class="h1-responsive font-bold wow fadeInDown" data-wow-delay="0.2s">Schr&oumldinger's Classroom</h1></li>
+                            <h1 class="h1-responsive font-bold wow fadeInDown" data-wow-delay="0.2s">Schr&ouml;dinger's Classroom</h1></li>
                         <li>
                             <p class="lead mt-4 mb-5 wow fadeInDown">The first ever online, interactive, educational quantum physics experience.</p>
                         </li>
@@ -115,15 +113,12 @@
                 </div>
             </div>
         </section>
-
+    
     </header>
 
     <!-- Main container-->
-    <div style="color:rgb(73, 155, 223);background-image: linear-gradient(#102c60,#161616)">
-        <center>
-            <img class="full-bg-img" style="padding: 0em 3em 3em 3em; width:auto" src="schrodinger.jpg">
-        </center>
-
+    <div style="background-image: linear-gradient(#102c60,#161616)">
+        <img class="full-bg-img imgcenter" src="schrodinger.jpg" alt="Schr&ouml;dinger">
     </div>
 
     <!--Footer-->
@@ -137,7 +132,7 @@
                     namely truth and sincerity,<br>
                     imposes them upon himself<br>
                     and upon other scientists."</h3>
-                <h5>-Erwin Schr&oumldinger</h5>
+                <h5>-Erwin Schr&ouml;dinger</h5>
             </div>
         </div>
 
@@ -148,7 +143,7 @@
         <!--Copyright-->
         <div class="footer-copyright">
             <div class="container-fluid" style="color:#fff">
-                © 2017 Copyright: <a href="#"> CP202 Group64</a>
+                © 2017 Copyright: <a style="color:rgb(51, 139, 255)">CP202 Group64</a>
             </div>
         </div>
         <!--/.Copyright-->
